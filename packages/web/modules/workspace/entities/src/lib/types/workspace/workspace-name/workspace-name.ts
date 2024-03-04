@@ -22,6 +22,6 @@ export type WorkspaceName = z.infer<typeof WorkspaceName>
  * @since 0.0.1
  */
 export const WorkspaceName = z.string()
-  .min(1, { message: "Workspace name must be at least 3 characters long" })
+  .min(5, { message: "Workspace name must be at least 5 characters long" })
   .max(16, { message: "Workspace name must be 16 characters long at max" })
   .brand(WorkspaceNameTypeId);
